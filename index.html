@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+    <head>
+        <meta charset="utf-8">
+        <title>My Journal Page</title>
+    </head>
+    <body></body>
+        <header>
+            <div>Journal Entries</div>
+            <ul>
+                <li><a href="#fri">Friday</a></li>
+                <li><a href="#sat">Saturday</a></li>
+                <li><a href="#sun">Sunday</a></li>
+                <li><a href="#Additional">Additional</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>April 9</h1>
+            <img
+            src="https://www.lajolla.com/wp-content/uploads/2018/03/323574_425010530868570_1741180867_o-1280x720.jpg"
+            alt="la jolla"
+            width="250"
+            />
+            <h2 id="fri">Friday</h2>
+            <h3>A Somewhat Simple Day</h3>
+            <p> Friday was quite an ordinary day for me. I woke up around the afternoon and attended my lectures. Then I 
+                left my apartment around mid-day and went on my daily walk. I regularly go on walks to keep up in exercise
+                during times of covid. I like to go randomly around my neighborhood listening to music and they are quite relaxing 
+                and help clear my mind.
+                Later I went home and watched to some basketball and waited for some of my friends back home to come down. 
+                <br> 
+                <br> 
+                <b> Here is a good clip from a recent play I watched. </b>
+            </p>
+            <video width="320" height="240" controls>
+                <source src="gyxhlc.mp4" type="video/mp4">
+            </video>
+            <br>
+            <p>
+                <b> Here is a song I have been playing. </b>
+            </p>
+            <audio controls>
+                <source src="Niki.mp3" type="audio/mp3">
+            </audio>
+        </main>
+        <main>
+            <h1>April 10</h1>
+            <h2 id="sat">Saturday</h2>
+            <p> I hungout with friends today and made some dinner. My dinner consisted of:
+                <ol>
+                    <li>Salmon</li>
+                    <li>Rice</li>
+                    <li>Bak Choy</li>
+                </ol>
+                After that my friends and I played a fun game of <strong>Codenames</strong>. Which is a fun board game involving
+                teams in which they guess words from one another based off of clues.
+            </p>
+        </main>
+        <main>
+            <h1>April 11</h1>
+            <h2 id="sun">Sunday</h2>
+            <p> 
+                Sunday I got some food with my housemates. We got a spot in La Jolla we enjoy called <i>Poki One N Half</i>.
+                Later on my housemates and I watched some e-sports. Today was the playoffs of <em>League of Legends</em> the North American regionals.
+                After that I worked on school work all day and watched a cool Amazon Prime show called <i>Invincible</i>.
+            </p>
+            <details>
+                <summary>Invincible</summary>
+                <p>
+                    Seventeen-year-old Mark Grayson is just like every guy his age, except that his father is Omni-Man, the most powerful superhero on the planet. As Mark develops powers of his own, he discovers his father's legacy may not be as heroic as it seems.
+                </p>
+            </details>
+        </main>
+        <hr>
+        <footer>
+            <h4 id="Additional">Additional</h4>
+            <fieldset>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" />
+                <input type="text" placeholder="First Name"/>
+                <input type="text" placeholder="Last Name"/> <br>
+                <input type="checkbox" id="Beef" name="meat" value="meat type">
+                <label for="Beef">Beef</label> 
+                <input type="checkbox" id="Pork" name="meat" value="meat type">
+                <label for="Pork">Pork</label> 
+                <input type="checkbox" id="Chicken" name="meat" value="meat type">
+                <label for="Chicken">Chicken</label> 
+                <input type="checkbox" id="Lamb" name="meat" value="meat type">
+                <label for="Lamb">Lamb</label> 
+                <input type="checkbox" id="Fish" name="meat" value="meat type">
+                <label for="Fish">Fish</label> 
+                <form>
+                    <label for="info">What is your favorite restaurant?</label>
+                    <textarea id="info" name="info" rows="1" cols="40"></textarea>
+                </form>
+                <button>Submit</button>
+            </fieldset>
+        </footer>
+        
+    </body>
+</html>
