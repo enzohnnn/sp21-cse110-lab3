@@ -1,0 +1,95 @@
+
+div {
+    font-size:3em;
+}
+
+@media (max-aspect-ratio: 3/2) {
+    div {
+      background: #9ff;  /* cyan */
+    }
+}
+
+ul{
+    font-size: 1.125em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
+}
+
+ol {
+    display: grid;
+    grid-template-columns: 100px 100px auto 100px 100px;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+h1 {
+    font-family: 'Orelega One', cursive;
+    color:red;
+    background-color: rgba(255, 99, 71, 0.2);
+    font-size: 38px;
+    text-decoration: line-through;
+    text-align: center;
+    margin: 0.3em;
+}
+
+h2 {
+    color:#7a1515;
+    background-color: hsl(41, 100%, 75%);
+    font-family: 'Orelega One', cursive;
+    font-size: 28px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 1.25em;
+    margin:auto;
+    padding: 4px;
+}
+
+h4 {
+    color:brown;
+    font-size: 16px;
+    background-color: burlywood;
+    text-decoration: underline;
+    position: static;
+}
+
+video {
+    padding: 10px;
+    display: block;
+    width: 320px;
+    height: 240px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+}
+
+video:focus {
+    background-color: darkblue;
+}
+
+audio {
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-width: 240px;
+    max-width: 360px;
+}
+
+.box {
+    border: solid black;
+    border-style: dashed;
+    border-color:chocolate;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: blue;
+  }
