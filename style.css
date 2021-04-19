@@ -20,7 +20,11 @@ header {
     align-content: space-around;
 }
 
-ol {
+* {
+    font-family: 'Orelega One', cursive;
+}
+
+#list1 {
     display: grid;
     grid-template-columns: 100px 100px auto 100px 100px;
     column-gap: 10px;
@@ -28,7 +32,6 @@ ol {
 }
 
 h1 {
-    font-family: 'Orelega One', cursive;
     color:red;
     background-color: rgba(255, 99, 71, 0.2);
     font-size: 38px;
@@ -39,11 +42,14 @@ h1 {
 
 h2 {
     color:#7a1515;
-    background-color: hsl(41, 100%, 75%);
     font-family: 'Orelega One', cursive;
     font-size: 28px;
     text-decoration: underline;
     margin-top: 10px;
+}
+
+h2[id] {
+    background-color: hsl(41, 100%, 75%);
 }
 
 h3 {
@@ -55,9 +61,12 @@ h3 {
 h4 {
     color:brown;
     font-size: 16px;
-    background-color: burlywood;
     text-decoration: underline;
     position: static;
+}
+
+h1, h4 {
+    background-color: rgba(255, 99, 71, 0.2);
 }
 
 video {
@@ -74,12 +83,14 @@ video:focus {
     background-color: darkblue;
 }
 
-audio {
+main > audio {
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 1em;
     min-width: 240px;
     max-width: 360px;
+    background-color: burlywood;
 }
 
 .box {
@@ -90,6 +101,20 @@ audio {
     border-radius: 10px;
 }
 
+.desc p {
+    color: rgb(53, 47, 47);
+}
+
 button:hover {
     color: blue;
-  }
+}
+
+h2 + h3 {
+    background-color: darksalmon;
+}
+
+h1 ~ p {
+    font-weight: bold;
+    padding: .5em;
+    background-color: lightblue;
+}
